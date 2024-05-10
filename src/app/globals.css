@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+@font-face {
+  font-family: MiFuente;
+  src: url('./../../public/Kanit-Regular.ttf');
+}
+
+*{
+  font-family: MiFuente, Arial, sans-serif;
+}
+body {
+
+  color: rgb(var(--foreground-rgb));
+  background-image: url('./../../public/fondoPorfolio.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+header{
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  background-color: #0c51495d;
+  border-bottom: 1px solid #09c1848d;
+  /* position: relative; */
+  top: -75px;
+  display: flex;
+  justify-content: center;
+}
+.wrapperHeader{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 20px;
+
+}
+.wrapperHeader div{
+  display: flex;
+  align-items: center;
+}
+.wrapperHeader .nombre{
+  position: relative;
+  top: -75px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #07f9a2;
+  filter: drop-shadow(0px 0px 6px #14ffb191);
+}
+.wrapperHeader .ctr{
+  position: relative;
+  top: -75px;
+  font-size: 1.3rem;
+  /* font-weight: bold; */
+  color: #07f9a2;
+  filter: drop-shadow(0px 0px 6px #14ffb191);
+}
+main{
+  width: 100%;
+  height: 100vh;
+}
+
+.content{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textbox{
+  width: 700px;
+  height: 350px;
+  /* background-color: rebeccapurple; */
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textbox h1{
+  font-size: 40px;
+  /* font-weight: bold; */
+  color: #07f9a2;
+  filter: drop-shadow(0px 0px 2px #14ffb191);
+  text-align: center;
+}
+.circle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  height: 600px;
+  border-radius: 100%;
+  /* background-color: red; */
+  border: 1px solid #07f9a06f;
+  border: 1px solid red;
+}
+.itemCircle1, .itemCircle2, .itemCircle3, .itemCircle4, .itemCircle5, .itemCircle6, .itemCircle7, .itemCircle8, .itemCircle9, .itemCircle10, .itemCircle11, .itemCircle12{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  /* background-color: #07f9a2; */
+  border: 1px solid #07f9a2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.itemCircle1{
+  position: absolute;
+  top: calc(50% - 325px);
+  transform: translateY(-300px);
+}
+.itemCircle2{
+  position: absolute;
+  top: calc(50% - 290px);
+  left: calc(50% - -220px);
+  transform: translateY(-500px) translateX(300px);
+}
+.itemCircle3{
+  position: absolute;
+  top: calc(50% - 199px);
+  left: calc(50% - -387px);
+  transform: translateY(-700px) translateX(500px);
+}
+.itemCircle4{
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - -475px);
+  transform:  translateX(1000px);
+}
+.itemCircle5{
+  position: absolute;
+  top: calc(50% - -150px);
+  left: calc(50% - -387px);
+  transform: translateX(1200px) translateY(700px);
+}
+.itemCircle6{
+  position: absolute;
+  top: calc(50% - -241px);
+  left: calc(50% - -220px);
+  transform: translateX(1200px) translateY(1000px);
+}
+.itemCircle7{
+  position: absolute;
+  top: calc(50% - -270px);
+   transform: translateY(1200px);
+}
+.itemCircle8{
+  position: absolute;
+  top: calc(50% - -241px);
+  left: calc(50% - 265px);
+  transform: translateX(-1200px) translateY(1000px);
+}
+.itemCircle9{
+  position: absolute;
+  top: calc(50% - -150px);
+  left: calc(50% - 440px);
+  transform:  translateX(-1200px) translateY(700px);
+}
+.itemCircle10{
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 525px);
+   transform:  translateX(-1200px);
+}
+.itemCircle11{
+  position: absolute;
+  top: calc(50% - 199px);
+  left: calc(50% - 435px);
+   transform: translateY(-1200px) translateX(-500px);
+}
+.itemCircle12{
+  position: absolute;
+  top: calc(50% - 290px);
+  left: calc(50% - 270px);
+   transform: translateY(-1200px) translateX(-300px);
+}
+body {
+  overflow: hidden;
+}
+/* .itemCircle3{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  top: calc(50% - 260px);
+  left: calc(50% - 325px);
+} */
+
+/* .itemCircle4{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 525px);
+} */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
